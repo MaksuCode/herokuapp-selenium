@@ -1,0 +1,51 @@
+
+
+Test categories
+* wip
+*shallow
+*deep
+*story number
+
+
+Grid - Parallel execution
+
+Selenium Standalone Server - jar file
+
+DesiredCapabilities - Which OS and browser combination to use
+
+Sauce Labs and BrowserStack - Using selenium grid basically.
+
+Building an automated feedback loop : CI and notification
+
+Should keep the trust of the team towards automation tests. So fix any bug before running it again.
+
+CI Configuration
+- Create job
+- Pull in your test code
+- Set uo Build Triggers
+- Configure Build Steps
+- Configure Test Reports
+- Setup notifications
+- Run Tests and view the results
+
+
+1 - Define a Test Strategy
+2 - Pick a programming language
+3 - Use Selenium Fundamentals
+4 - Write your First Test
+5 - Write re-usable and maintainable test code
+6 - Make your tests resilient
+7 - Package your tests into a framework
+8 - Add in cross-browser execution
+9 - Build an automated feedback loop
+10- Find information on your own
+
+
+Headless test : without head which means not on browser
+
+
+Highlighting an element for debugging : using JS code to border the element
+GrowlNotification
+
+
+

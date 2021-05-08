@@ -1,0 +1,35 @@
+This is a wiki file where problems I have encountered and how I have overcame them.
+
+Problem : I could not run test by mvn -clean test.
+Solution : maven-surefire-plugin should be 2.22.0 or higher for Junit-5 needed
+Where I found : https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-running-unit-tests-with-maven/
+
+
+Problem : Setting JAVA_HOME variable
+Solution : Go to .zsh_profile and/or .bash_profile and set path as follows (path where u have installed Java) , save the file and restart the terminal
+export JAVA_HOME=$(/Library/Java/JavaVirtualMachines/jdk1.8.0_281)
+export PATH=$PATH:$JAVA_HOME/bin
+
+Problem : Running test methods in parallel
+Solution : Setting properties in junit-platform-properties to have a parallel test
+Note : Also this could be achieved in pom.xml file.
+    Problem : Not able to run tests in parallel when @BeforeEach method is included in org.maksu.BaseTest.class
+    Solution: Implemented @BeforeEach and @AfterEach methods for all test classes. But this is not a best practice since therw will be huge code multiplication when
+              new test classes added to project.
+        Result : @TestInstance(TestInstance.Lifecycle.PER_METHOD) annotaion over BaseTest.class did it! Now  all test methods run in parallel.
+
+Hint : You can also define junit config parameters in pom.xml as follows :
+       https://junit.org/junit5/docs/current/user-guide/#running-tests-build-maven-config-params
+
+
+
+
+
+
+Important Notes concerning design!
+
+- All tests methods should be independent and run randomly.
+
+
+
+
