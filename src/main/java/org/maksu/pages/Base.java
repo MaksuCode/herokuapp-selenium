@@ -36,6 +36,11 @@ public class Base implements Config {
         find(locator).click();
     }
 
+    public void click(WebElement element){
+        highlight(element , null);
+        element.click();
+    }
+
     public void type(String inputText , By locator){
         highlight(locator , null);
         find(locator).sendKeys(inputText);
@@ -97,6 +102,26 @@ public class Base implements Config {
         }
     }
 
+    private void highlight(WebElement element , Integer duration) {
+        duration = duration != null ? duration : 10 ;
+        String originalStyle = element.getAttribute("style");
+        ((JavascriptExecutor)driver).executeScript("arguments[0].setAttribute(arguments[1], arguments[2])"
+                ,element,
+                "style",
+                "border: 3px solid red; border-style: dashed;");
+        try {
+            if (duration > 0){
+                Thread.sleep(duration);
+                ((JavascriptExecutor)driver).executeScript( "arguments[0].setAttribute(arguments[1], arguments[2])",
+                        element,
+                        "style",
+                        originalStyle);
+            }
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+
     public Boolean brokenImageExist(List<WebElement> elements){
         for (WebElement element : elements){
             if (requestSender.getStatusCode(getAttributeOf(element , "src")) != 200){
@@ -109,6 +134,10 @@ public class Base implements Config {
 
     public String getAttributeOf(WebElement element , String attributeName){
         return element.getAttribute(attributeName);
+    }
+
+    public Boolean isSelected(WebElement element){
+        return element.isSelected();
     }
 
 

@@ -21,13 +21,18 @@ public class Inputs extends Base {
     }
 
     public Boolean checkInput(){
-        String value = find(inputLocator).getText();
-        System.out.println(value); ///
-       if (value.length() > 0){
-           return false;
-       }
-       return true ;
+        String value = getInput();
+        if (value.length() > 0){
+            return true;
+        }
+        return false ;
     }
+
+    private String getInput(){
+        return getAttributeOf(find(inputLocator) , "value");
+    }
+
+
 
 
 

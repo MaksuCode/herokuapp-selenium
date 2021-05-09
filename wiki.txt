@@ -21,6 +21,15 @@ Note : Also this could be achieved in pom.xml file.
 Hint : You can also define junit config parameters in pom.xml as follows :
        https://junit.org/junit5/docs/current/user-guide/#running-tests-build-maven-config-params
 
+Hint : You can get text of an input element by getAttribute("value").
+
+Problem : I needed to read the email for "forgot-password" case.
+Soluiton: Created a GmailInbox.class for that purpose
+Found   : https://www.technicalkeeda.com/java-tutorials/how-to-access-gmail-inbox-using-java-imap
+    Sub Problem : Parsing mail content
+    Solution    : I used apache-commons-email for parsing emails.
+    Found       : https://stackoverflow.com/questions/11240368/how-to-read-text-inside-body-of-mail-using-javax-mail/31877854#
+
 
 
 
