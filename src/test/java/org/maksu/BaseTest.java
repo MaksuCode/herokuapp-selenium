@@ -16,12 +16,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseTest implements Config {
 
     WebDriver driver ;
-    static String browser = System.getProperty("browser");
+    static String browser = System.getProperty("Browser");
 
     // TODO: 8.05.2021 : Implement Selenium Grid here to have a cross-browser test execution
     @BeforeAll
     static void setProp(){
-        switch (browser){
+        switch (browser.toLowerCase()){
             case "chrome" :
                 System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
                 break;
@@ -58,7 +58,6 @@ public class BaseTest implements Config {
 //        System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
 //        return new ChromeDriver(options);
 //    }
-
 
 //    @BeforeEach
 //    public void setDriver(){

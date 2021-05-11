@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.maksu.Test_Input
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.371 s - in org.maksu.Test_Input
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.maksu.Test_Input

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.maksu.Test_Broken_Images
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.767 s - in org.maksu.Test_Broken_Images
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.maksu.Test_Broken_Images
