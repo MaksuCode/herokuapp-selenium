@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class GmailInbox {
 
-    public void readLastMail(String email , String password) {
+    public String readLastMail(String email , String password) {
 
         Properties props = new Properties();
 
@@ -26,13 +26,16 @@ public class GmailInbox {
 
             Message[] messages = inbox.getMessages();
 
-            System.out.println(readHtmlContent((MimeMessage) messages[messageCount-1]));
+            String mailContent = readHtmlContent((MimeMessage) messages[messageCount-1]) ;
 
             inbox.close(true);
             store.close();
 
+            return mailContent ;
+
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
     }
 
 }
@@ -43,6 +46,12 @@ public class GmailInbox {
 
     private String readPlainContent(MimeMessage message) throws Exception {
         return new MimeMessageParser(message).parse().getPlainContent();
+    }
+
+    public static void main(String[] args) {
+        GmailInbox gmailInbox = new GmailInbox();
+        String a = gmailInbox.readLastMail("mustafaksu4@gmail.com" , "kara.OLUK54");
+        System.out.println(a);
     }
 
 }

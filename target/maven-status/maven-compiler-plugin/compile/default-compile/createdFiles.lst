@@ -1,8 +1,8 @@
-org/maksu/HeadlessChromeDemo.class
 org/maksu/httpclient/RequestSender.class
 org/maksu/pages/Login.class
 org/maksu/pages/Base.class
 org/maksu/pages/Inputs.class
 org/maksu/pages/Checkboxes.class
 org/maksu/pages/BrokenImage.class
+org/maksu/GmailInbox.class
 org/maksu/config/Config.class

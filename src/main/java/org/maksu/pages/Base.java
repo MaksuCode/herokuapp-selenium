@@ -53,6 +53,7 @@ public class Base implements Config {
 
     public Boolean isDisplayed(By locator){
         try {
+            waitFor(ExpectedConditions.visibilityOfElementLocated(locator) , 10);
             highlight(locator , null);
             return find(locator).isDisplayed();
         }catch (NoSuchElementException noSuchElementException){
