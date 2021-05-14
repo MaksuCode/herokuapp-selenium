@@ -5,8 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75f9a25-9263-4b5b-a2a7-f64b5fe277f2" name="Default Changelist" comment="Delete browser prop">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/maksu/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/maksu/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/GmailInbox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/config/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/httpclient/RequestSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/pages/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/pages/BrokenImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/pages/Checkboxes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/pages/Inputs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/maksu/pages/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/smtp.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.maksu.Test_Broken_Images.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.maksu.Test_Checkboxes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.maksu.Test_Input.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.maksu.Test_Login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.maksu.Test_Broken_Images.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.maksu.Test_Checkboxes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.maksu.Test_Input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.maksu.Test_Login.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit-platform.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/maksu/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/maksu/Test_Broken_Images.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/maksu/Test_Checkboxes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/maksu/Test_Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/maksu/Test_Login.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +80,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/drivers" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.git" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.maksu" />
