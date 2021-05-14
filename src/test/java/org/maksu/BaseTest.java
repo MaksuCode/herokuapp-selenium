@@ -27,7 +27,7 @@ public class BaseTest implements Config {
     @BeforeEach
     public void initateBrowser(){
         driver = new ChromeDriver();
-        it driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     @AfterEach
