@@ -9,6 +9,7 @@ import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.maksu.config.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 @TestInstance(TestInstance.Lifecycle.PER_METHOD)
@@ -21,11 +22,11 @@ public class BaseTest implements Config {
     // TODO: 8.05.2021 : Implement Selenium Grid here to have a cross-browser test execution
     @BeforeAll
     static void setProp(){
-        switch (browser.toLowerCase()){
-            case "chrome" :
+        switch (browser){
+            case "Chrome" :
                 System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
                 break;
-            case "firefox":
+            case "Firefox":
                 System.setProperty("webdriver.gecko.driver","drivers/geckodriver");
                 break;
         }
@@ -34,11 +35,12 @@ public class BaseTest implements Config {
     @BeforeEach
     public void initateBrowser(){
         switch (browser){
-            case "chrome":
-                driver = new ChromeDriver();
-                driver.manage().window().maximize();
+            case "Chrome":
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("start-maximized");
+                driver = new ChromeDriver(options);
                 break;
-            case "firefox" :
+            case "Firefox" :
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
@@ -47,24 +49,8 @@ public class BaseTest implements Config {
 
     @AfterEach
     public void tearDown(){
-        driver.quit();
+       driver.quit();
     }
-
-    //    protected WebDriver getDriver(){
-//        ChromeOptions options = new ChromeOptions();
-//        //options.addArguments("--headless");
-//        options.addArguments("--incognito");
-//        options.addArguments("start-maximized");
-//        System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
-//        return new ChromeDriver(options);
-//    }
-
-//    @BeforeEach
-//    public void setDriver(){
-//        this.driver = getDriver();
-//        driver.manage().window().maximize();
-//    }
-
 
 
 
