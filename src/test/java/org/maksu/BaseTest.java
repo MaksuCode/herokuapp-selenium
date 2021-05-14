@@ -22,14 +22,12 @@ public class BaseTest implements Config {
     @BeforeAll
     static void setProp(){
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
-        //System.setProperty("webdriver.gecko.driver","drivers/geckodriver");
-
     }
 
     @BeforeEach
     public void initateBrowser(){
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        it driver.manage().window().maximize();
     }
 
     @AfterEach
