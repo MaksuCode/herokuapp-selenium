@@ -16,18 +16,29 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseTest implements Config {
 
     WebDriver driver ;
-    //static String browser = System.getProperty("Browser");
+    static String browser = "chrome";
 
     // TODO: 8.05.2021 : Implement Selenium Grid here to have a cross-browser test execution
     @BeforeAll
     static void setProp(){
+        System.getProperty("browser");
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
+        System.setProperty("webdriver.gecko.driver" , "drivers/geckodriver");
     }
 
     @BeforeEach
     public void initateBrowser(){
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        switch (browser){
+            case "firefox":
+                driver = new FirefoxDriver();
+                driver.manage().window().maximize();
+                break;
+            default:
+                driver = new ChromeDriver();
+                driver.manage().window().maximize();
+                break;
+        }
+
     }
 
     @AfterEach
