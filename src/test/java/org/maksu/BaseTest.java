@@ -23,10 +23,10 @@ public class BaseTest implements Config {
     @BeforeAll
     static void setProp(){
         switch (browser){
-            case "Chrome" :
+            case "chrome" :
                 System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
                 break;
-            case "Firefox":
+            case "firefox":
                 System.setProperty("webdriver.gecko.driver","drivers/geckodriver");
                 break;
         }
@@ -35,12 +35,12 @@ public class BaseTest implements Config {
     @BeforeEach
     public void initateBrowser(){
         switch (browser){
-            case "Chrome":
+            case "chrome":
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("start-maximized");
                 driver = new ChromeDriver(options);
                 break;
-            case "Firefox" :
+            case "firefox" :
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
