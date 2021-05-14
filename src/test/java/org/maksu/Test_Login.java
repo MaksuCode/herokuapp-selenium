@@ -3,6 +3,7 @@ package org.maksu;
 import org.junit.jupiter.api.*;
 import org.maksu.pages.Login;
 
+@Tag("regression")
 public class Test_Login extends BaseTest {
 
     @Test

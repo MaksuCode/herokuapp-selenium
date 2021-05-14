@@ -2,9 +2,12 @@ package org.maksu;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.maksu.pages.Inputs;
 
+@Tag("regression")
+@Tag("wip")
 public class Test_Input extends BaseTest{
 
     @Test

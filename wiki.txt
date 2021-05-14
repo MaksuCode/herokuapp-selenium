@@ -30,6 +30,10 @@ Found   : https://www.technicalkeeda.com/java-tutorials/how-to-access-gmail-inbo
     Solution    : I used apache-commons-email for parsing emails.
     Found       : https://stackoverflow.com/questions/11240368/how-to-read-text-inside-body-of-mail-using-javax-mail/31877854#
 
+Problem : How to run junit tagged test classes by maven
+Solution: Use mvn clean -Dgroups="abc" test
+Found   : https://mkyong.com/junit5/junit-5-tagging-and-filtering-tag-examples/
+
 
 
 
