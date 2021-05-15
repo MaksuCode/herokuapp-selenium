@@ -10,6 +10,7 @@ public class Test_Checkboxes extends BaseTest{
 
     @Test
     public void click_check_box_1(){
+        System.out.println(Thread.currentThread().getName());
         Checkboxes checkbox = new Checkboxes(driver);
         checkbox.clickCheckbox(0);
         Assertions.assertTrue(checkbox.isSelected(checkbox.getCheckboxList().get(0)),
@@ -18,6 +19,7 @@ public class Test_Checkboxes extends BaseTest{
 
     @Test
     public void click_check_box_2(){
+        System.out.println(Thread.currentThread().getName());
         Checkboxes checkbox = new Checkboxes(driver);
         checkbox.clickCheckbox(1);
         Assertions.assertFalse(checkbox.isSelected(checkbox.getCheckboxList().get(1)),

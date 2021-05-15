@@ -35,6 +35,12 @@ Solution: Use mvn clean -Dgroups="abc" test
 Found   : https://mkyong.com/junit5/junit-5-tagging-and-filtering-tag-examples/
 
 
+Hint : To run all test classes in same thread but their methods in parallel use this :
+      junit.jupiter.execution.parallel.enabled = true
+      junit.jupiter.execution.parallel.mode.default = concurrent
+      junit.jupiter.execution.parallel.mode.classes.default = same_thread
+
+
 
 
 
