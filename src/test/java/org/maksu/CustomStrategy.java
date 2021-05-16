@@ -8,10 +8,6 @@ public class CustomStrategy implements ParallelExecutionConfiguration , Parallel
 
     int parallisim = Integer.parseInt(System.getProperty("parallelism"));
 
-    public void setParallisim(int value){
-        this.parallisim = value ;
-    }
-
     @Override
     public int getParallelism() {
         return this.parallisim;
