@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75f9a25-9263-4b5b-a2a7-f64b5fe277f2" name="Default Changelist" comment="Delete browser prop">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/maksu/CustomStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Checkboxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Checkboxes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
@@ -198,11 +198,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/maksu/pages/Checkboxes.java</url>
           <line>22</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

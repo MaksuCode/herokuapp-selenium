@@ -3,12 +3,10 @@ package org.maksu;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junitpioneer.jupiter.SetSystemProperty;
 import org.maksu.pages.Checkboxes;
 
 @Tag("regression")
 public class Test_Checkboxes extends BaseTest{
-
 
     @Test
     public void click_check_box_1(){
@@ -27,4 +25,5 @@ public class Test_Checkboxes extends BaseTest{
         Assertions.assertFalse(checkbox.isSelected(checkbox.getCheckboxList().get(1)),
                 "Checkbox is not checked!");
     }
+
 }
