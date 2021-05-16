@@ -6,7 +6,7 @@ import org.junit.platform.engine.support.hierarchical.ParallelExecutionConfigura
 
 public class CustomStrategy implements ParallelExecutionConfiguration , ParallelExecutionConfigurationStrategy {
 
-    int parallisim = Integer.parseInt(System.getProperty("parallelism"));
+    int parallisim = Integer.parseInt(System.getProperty("Parallelism"));
 
     @Override
     public int getParallelism() {
