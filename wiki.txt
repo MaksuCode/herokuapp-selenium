@@ -40,7 +40,9 @@ Hint : To run all test classes in same thread but their methods in parallel use 
       junit.jupiter.execution.parallel.mode.default = concurrent
       junit.jupiter.execution.parallel.mode.classes.default = same_thread
 
-
+Problem : How to keep up to date webdriver versions:
+Solution: Using WebDriverManager here : https://github.com/bonigarcia/webdrivermanager
+          You do not need to define anything. It will run...
 
 
 
@@ -50,8 +52,3 @@ Important Notes concerning design!
 - All tests methods should be independent and run randomly.
 
 
-
-
-SEARCH :
-
-- How to automatically update your webdrivers : https://github.com/bonigarcia/webdrivermanager

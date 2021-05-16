@@ -1,5 +1,6 @@
 package org.maksu;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,17 +13,21 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseTest implements Config {
 
     WebDriver driver ;
-    String browser = System.getProperty("Browser");
+    static String browser = System.getProperty("Browser");
+    static String OS = System.getProperty("os.name");
 
     @BeforeAll
     static void beforeClass(){
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
-        System.setProperty("webdriver.gecko.driver" , "drivers/geckodriver");
+        if (browser.equals("Chrome")){
+            WebDriverManager.chromedriver().setup();
+        }else if (browser.equals("Firefox")){
+            WebDriverManager.firefoxdriver().setup();
+        }
     }
 
     @BeforeEach
     public void beforeMethod(){
-        if ("firefox".equals(browser)) {
+        if ("Firefox".equals(browser)) {
             driver = new FirefoxDriver();
         } else {
             driver = new ChromeDriver();

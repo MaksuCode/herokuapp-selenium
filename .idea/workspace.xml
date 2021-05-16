@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75f9a25-9263-4b5b-a2a7-f64b5fe277f2" name="Default Changelist" comment="Delete browser prop">
+      <change afterPath="$PROJECT_DIR$/drivers/windows/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/windows/geckodriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/mac/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/geckodriver" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/mac/geckodriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiki.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wiki.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +29,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -42,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/drivers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/drivers/windows" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.12004802" />
@@ -50,10 +57,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/drivers/windows" />
       <recent name="$PROJECT_DIR$/drivers" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/drivers/mac" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.git" />
     </key>
@@ -62,7 +71,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test_Login.successful_login">
+  <component name="RunManager" selected="Application.BaseTest">
     <configuration name="BaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.maksu.BaseTest" />
       <module name="selenium-internet-herokuapp-automation" />
@@ -137,10 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BaseTest" />
         <item itemvalue="JUnit.Test_Login.successful_login" />
         <item itemvalue="JUnit.Test_Broken_Images" />
         <item itemvalue="JUnit.Test_Login" />
-        <item itemvalue="Application.BaseTest" />
         <item itemvalue="Application.GmailInbox" />
       </list>
     </recent_temporary>
