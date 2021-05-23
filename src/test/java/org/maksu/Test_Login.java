@@ -1,6 +1,7 @@
 package org.maksu;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.maksu.pages.Login;
 
 @Tag("regression")
@@ -8,7 +9,6 @@ public class Test_Login extends BaseTest {
 
     @Test
     public void successful_login()  {
-        System.out.println(Thread.currentThread().getName());
         Login login = new Login(driver);
         login.with(username , password );
         Assertions.assertTrue(login.successMessagePresent(),"nope!");
@@ -16,7 +16,6 @@ public class Test_Login extends BaseTest {
 
     @Test
     public void failure_login_with_invalid_password(){
-        System.out.println(Thread.currentThread().getName());
         Login login = new Login(driver);
         login.with(username , "invalid_password" );
         Assertions.assertTrue(login.failureMessagePresent(),"nope!");
@@ -24,7 +23,6 @@ public class Test_Login extends BaseTest {
 
     @Test
     public void failure_login_with_invalid_username(){
-        System.out.println(Thread.currentThread().getName());
         Login login = new Login(driver);
         login.with("invalid_username" , password );
         Assertions.assertTrue(login.failureMessagePresent(),"nope!");
