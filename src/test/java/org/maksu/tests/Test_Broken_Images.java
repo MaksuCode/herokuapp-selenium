@@ -1,10 +1,10 @@
-package org.maksu;
+package org.maksu.tests;
 
 import org.junit.jupiter.api.*;
 import org.maksu.pages.BrokenImage;
 
 @Tag("regression")
-public class Test_Broken_Images extends BaseTest{
+public class Test_Broken_Images extends BaseTest {
 
     @Test
     public void broken_image_test() {

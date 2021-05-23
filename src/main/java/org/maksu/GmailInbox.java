@@ -48,10 +48,4 @@ public class GmailInbox {
         return new MimeMessageParser(message).parse().getPlainContent();
     }
 
-    public static void main(String[] args) {
-        GmailInbox gmailInbox = new GmailInbox();
-        String a = gmailInbox.readLastMail("mustafaksu4@gmail.com" , "kara.OLUK54");
-        System.out.println(a);
-    }
-
 }

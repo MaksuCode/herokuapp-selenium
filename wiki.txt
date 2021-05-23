@@ -13,7 +13,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 Problem : Running test methods in parallel
 Solution : Setting properties in junit-platform-properties to have a parallel test
 Note : Also this could be achieved in pom.xml file.
-    Problem : Not able to run tests in parallel when @BeforeEach method is included in org.maksu.BaseTest.class
+    Problem : Not able to run tests in parallel when @BeforeEach method is included in org.maksu.tests.BaseTest.class
     Solution: Implemented @BeforeEach and @AfterEach methods for all test classes. But this is not a best practice since therw will be huge code multiplication when
               new test classes added to project.
         Result : @TestInstance(TestInstance.Lifecycle.PER_METHOD) annotaion over BaseTest.class did it! Now  all test methods run in parallel.

@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75f9a25-9263-4b5b-a2a7-f64b5fe277f2" name="Default Changelist" comment="Delete browser prop">
-      <change afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/maksu/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/maksu/pages/WindowsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/maksu/tests/Test_Open_New_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/maksu/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/maksu/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/TestResultLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/TestResultLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/maksu/GmailInbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/maksu/GmailInbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/maksu/pages/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/maksu/pages/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/CustomStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/CustomStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/TestResultLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/testlogger/TestResultLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Broken_Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/tests/Test_Broken_Images.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Checkboxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/tests/Test_Checkboxes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/tests/Test_Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/tests/Test_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiki.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wiki.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +84,13 @@
       <recent name="org.maksu" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test_Login.successful_login">
-    <configuration name="BaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.maksu.BaseTest" />
+  <component name="RunManager" selected="JUnit.Test_Open_New_Window.open_new_window">
+    <configuration name="WindowsPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.maksu.pages.WindowsPage" />
       <module name="selenium-internet-herokuapp-automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.maksu.*" />
+          <option name="PATTERN" value="org.maksu.pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +102,12 @@
       <module name="selenium-internet-herokuapp-automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.maksu.*" />
+          <option name="PATTERN" value="org.maksu.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.maksu" />
-      <option name="MAIN_CLASS_NAME" value="org.maksu.Test_Broken_Images" />
+      <option name="PACKAGE_NAME" value="org.maksu.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.maksu.tests.Test_Broken_Images" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,27 +117,12 @@
       <module name="selenium-internet-herokuapp-automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.maksu.*" />
+          <option name="PATTERN" value="org.maksu.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.maksu" />
-      <option name="MAIN_CLASS_NAME" value="org.maksu.Test_Checkboxes" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-internet-herokuapp-automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.maksu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.maksu" />
-      <option name="MAIN_CLASS_NAME" value="org.maksu.Test_Login" />
+      <option name="PACKAGE_NAME" value="org.maksu.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.maksu.tests.Test_Checkboxes" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,13 +132,29 @@
       <module name="selenium-internet-herokuapp-automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.maksu.*" />
+          <option name="PATTERN" value="org.maksu.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.maksu" />
-      <option name="MAIN_CLASS_NAME" value="org.maksu.Test_Login" />
+      <option name="PACKAGE_NAME" value="org.maksu.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.maksu.tests.Test_Login" />
       <option name="METHOD_NAME" value="successful_login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_Open_New_Window.open_new_window" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-internet-herokuapp-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.maksu.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.maksu.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.maksu.tests.Test_Open_New_Window" />
+      <option name="METHOD_NAME" value="open_new_window" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test_Open_New_Window.open_new_window" />
+        <item itemvalue="Application.WindowsPage" />
         <item itemvalue="JUnit.Test_Login.successful_login" />
         <item itemvalue="JUnit.Test_Broken_Images" />
         <item itemvalue="JUnit.Test_Checkboxes" />
-        <item itemvalue="JUnit.Test_Login" />
-        <item itemvalue="Application.BaseTest" />
       </list>
     </recent_temporary>
   </component>

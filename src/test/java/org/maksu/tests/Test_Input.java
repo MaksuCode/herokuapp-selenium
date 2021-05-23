@@ -1,4 +1,4 @@
-package org.maksu;
+package org.maksu.tests;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -8,7 +8,7 @@ import org.maksu.pages.Inputs;
 
 @Tag("regression")
 @Tag("wip")
-public class Test_Input extends BaseTest{
+public class Test_Input extends BaseTest {
 
     @Test
     @Disabled("Due to bug on Inputs.checkInput() method.")

@@ -1,7 +1,6 @@
-package org.maksu;
+package org.maksu.tests;
 
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.maksu.pages.Login;
 
 @Tag("regression")

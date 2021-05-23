@@ -7,11 +7,12 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Base implements Config {
 
-    private WebDriver driver;
+    protected WebDriver driver;
     RequestSender requestSender = new RequestSender();
 
     public Base(WebDriver driver){
@@ -139,6 +140,15 @@ public class Base implements Config {
 
     public Boolean isSelected(WebElement element){
         return element.isSelected();
+    }
+
+    public void switchToWindow(int index){
+        getWindows().get(index);
+    }
+
+    public ArrayList<String> getWindows(){
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+        return tabs;
     }
 
 

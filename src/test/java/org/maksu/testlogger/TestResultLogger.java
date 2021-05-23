@@ -1,11 +1,14 @@
-package org.maksu;
+package org.maksu.testlogger;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
+import org.maksu.Logger;
+
 import java.util.Optional;
 
 public class TestResultLogger implements TestWatcher {
 
+    // TODO: 23.05.2021 Fix log issue : Last executed test is just added to log.  
     Logger logger = new Logger();
 
     @Override
@@ -15,7 +18,7 @@ public class TestResultLogger implements TestWatcher {
 
     @Override
     public void testSuccessful(ExtensionContext context) {
-        logger.info(getTestName(context).concat(" PASSED..."));
+        logger.info(getTestName(context).concat(" PASSED"));
     }
 
     @Override
@@ -25,13 +28,13 @@ public class TestResultLogger implements TestWatcher {
 
     @Override
     public void testAborted(ExtensionContext context, Throwable cause) {
-        logger.warn(getTestName(context).concat(" ABORTED").concat(" , caues : ").concat(cause.getMessage()));
+        logger.warn(getTestName(context).concat(" ABORTED").concat(" , cause : ").concat(cause.getMessage()));
     }
 
     private String getTestName(ExtensionContext context){
         String className = context.getRequiredTestClass().getSimpleName();
         String methodName = context.getDisplayName().toLowerCase();
         return className.concat(".").concat(methodName);
-
     }
+
 }

@@ -1,8 +1,9 @@
-package org.maksu;
+package org.maksu.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.maksu.testlogger.TestResultLogger;
 import org.maksu.config.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +20,7 @@ public class BaseTest implements Config {
     public static void beforeClass(){
         if (browser.equals("Firefox")){
             WebDriverManager.firefoxdriver().setup();
-        }else{
+        }else if(browser.equals("Chrome")){
             WebDriverManager.chromedriver().setup();
         }
     }
