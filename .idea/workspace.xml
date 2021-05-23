@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b75f9a25-9263-4b5b-a2a7-f64b5fe277f2" name="Default Changelist" comment="Delete browser prop" />
+    <list default="true" id="b75f9a25-9263-4b5b-a2a7-f64b5fe277f2" name="Default Changelist" comment="Delete browser prop">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/maksu/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/maksu/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/maksu/Test_Login.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -61,8 +66,11 @@
       <recent name="org.maksu" />
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.maksu" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.BaseTest">
+  <component name="RunManager" selected="JUnit.Test_Login.successful_login">
     <configuration name="BaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.maksu.BaseTest" />
       <module name="selenium-internet-herokuapp-automation" />
@@ -137,10 +145,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BaseTest" />
         <item itemvalue="JUnit.Test_Login.successful_login" />
-        <item itemvalue="JUnit.Test_Broken_Images" />
         <item itemvalue="JUnit.Test_Login" />
+        <item itemvalue="Application.BaseTest" />
+        <item itemvalue="JUnit.Test_Broken_Images" />
         <item itemvalue="Application.GmailInbox" />
       </list>
     </recent_temporary>
@@ -195,6 +203,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/maksu/pages/Checkboxes.java</url>
           <line>22</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/maksu/TestResultLogger.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/maksu/TestResultLogger.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/maksu/TestResultLogger.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/maksu/TestResultLogger.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
